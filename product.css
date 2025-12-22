@@ -1,0 +1,139 @@
+body {
+    background-color: #e3f2fd;
+    width: 100vw;
+    overflow-x: hidden;
+}
+:root{
+    --primary : #6AB0E3;
+    --dark :  #6AB0E3;
+}
+
+.navbar{
+    background-color: var(--primary);
+    font-family: 'MainTitleFont';
+    font-size: 24px;
+}
+
+h2{
+    font-family: 'MainTitleFont';
+    font-size: 32px;
+}
+
+.product-card {
+    background-color: #f8f9fa;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 100%; /* 让所有卡片等高 */
+    border: 1px solid rgba(106, 176, 227, 0.2);
+}
+
+/* 鼠标悬停效果：卡片浮起并变色 */
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(106, 176, 227, 0.3);
+    background-color: #ffffff;
+}
+
+/* 产品图片大小控制 */
+.product-img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+/* 去掉链接的默认蓝色下划线 */
+.product-link {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+.product-card h4 {
+    font-family: 'SubHeadingFont', sans-serif;
+    color: #6AB0E3;
+    margin-bottom: 15px;
+    line-height: 2;
+}
+
+.product-card p {
+    font-family: 'BodyTextFont';
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.footer {
+    background-color: var(--dark);
+}
+
+.footer a {
+    color: #ffffff !important;
+    font-family: 'MainTitleFont', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block; 
+    width: fit-content; 
+    transition: all 0.3s ease;
+}
+
+.social-link {
+    width: 55px !important;
+    height: 55px !important;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-shrink: 0;
+    margin-left: auto;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.social-link i {
+    font-size: 28px !important;
+    line-height: 1 !important;
+    display: block;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .mobile-scroll {
+        flex-wrap: nowrap !important; 
+        overflow-x: auto !important; 
+        -ms-overflow-style: none;  
+        scrollbar-width: none; 
+    }
+
+    .mobile-scroll::-webkit-scrollbar {
+        display: none;
+    }
+
+    .mobile-scroll .col-10 {
+        flex: 0 0 85% !important; 
+        width: 85% !important;
+        max-width: 85% !important;
+    }
+}
+
+@font-face {
+    font-family: 'MainTitleFont'; 
+    src: url('f3.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'SubHeadingFont';
+    src: url('f1.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'BodyTextFont';
+    src: url('f2.ttf') format('truetype');
+    font-weight: normal;
+}

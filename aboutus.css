@@ -1,0 +1,115 @@
+body {
+    background-color: #e3f2fd;
+    width: 100vw;
+    overflow-x: hidden;
+}
+:root{
+    --primary : #6AB0E3;
+    --dark :  #6AB0E3;
+}
+
+.navbar{
+    background-color: var(--primary);
+    font-family: 'MainTitleFont';
+    font-size: 24px;
+}
+
+.about-title {
+    font-family: 'SubHeadingFont';
+    font-size: 34px;
+    color: #6AB0E3;
+}
+
+.about-heading{
+    font-family: 'SubHeadingFont';
+    font-size: 30px;
+    padding: 20px;
+    line-height: 2;
+    letter-spacing: 2px;
+    color: #6AB0E3;
+}
+
+.about-text{
+    font-family: 'BodyTextFont';
+    font-size: 32px;
+    color: #6AB0E3;
+}
+
+.footer {
+    background-color: var(--dark);
+}
+
+.footer a {
+    color: #ffffff !important;
+    font-family: 'MainTitleFont', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block; 
+    width: fit-content; 
+    transition: all 0.3s ease;
+}
+
+.footer a:hover {
+    color: #3a3a3a !important;
+    padding-left: 10px;
+}
+
+.social-link {
+    width: 55px !important;
+    height: 55px !important;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-shrink: 0;
+    margin-left: auto;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.social-link i {
+    font-size: 28px !important;
+    line-height: 1 !important;
+    display: block;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .mobile-scroll {
+        flex-wrap: nowrap !important; 
+        overflow-x: auto !important; 
+        -ms-overflow-style: none;  
+        scrollbar-width: none; 
+    }
+
+    .mobile-scroll::-webkit-scrollbar {
+        display: none;
+    }
+
+    .mobile-scroll .col-10 {
+        flex: 0 0 85% !important; 
+        width: 85% !important;
+        max-width: 85% !important;
+    }
+}
+
+@font-face {
+    font-family: 'MainTitleFont'; 
+    src: url('f3.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'SubHeadingFont';
+    src: url('f1.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'BodyTextFont';
+    src: url('f2.ttf') format('truetype');
+    font-weight: normal;
+}

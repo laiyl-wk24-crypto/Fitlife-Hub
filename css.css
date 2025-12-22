@@ -1,0 +1,220 @@
+body {
+    background-color: #e3f2fd;
+    width: 100vw;
+    overflow-x: hidden;
+}
+:root{
+    --primary : #6AB0E3;
+    --dark :  #6AB0E3;
+}
+
+.navbar{
+    background-color: var(--primary);
+    font-family: 'MainTitleFont';
+    font-size: 24px;
+}
+
+.btn-custom{
+    background-color: var(--primary);
+}
+
+.btn-custom:hover{
+    background-color: var(--dark);
+}
+
+.section-img {
+    height: 300px !important;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 30px; 
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative; 
+    z-index: 1;
+}
+
+ .section1 h2, .section2 h2, .section3 h2 {
+    font-family: 'SubHeadingFont';
+    font-size: 32px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    color: #9CD5FF;
+}
+
+.description-box {
+    background-color: #90caf9;
+    color: #2c2c2c;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 60px;
+    text-align: center;
+    font-family: 'BodyTextFont';
+    font-size: 24px;
+    line-height: 2;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 8px;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+.section3,
+.section4,
+.section5{
+    padding-top: 60px;
+}
+
+.footer {
+    background-color: var(--dark);
+}
+
+.footer a {
+    color: #ffffff !important;
+    font-family: 'MainTitleFont', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block; 
+    width: fit-content; 
+    transition: all 0.3s ease;
+}
+
+.footer a:hover {
+    color: #3a3a3a !important;
+    padding-left: 10px;
+}
+
+.flipbox-outer{
+    aspect-ratio: 1/1;
+    width: 100%;
+    perspective: 1000px;
+}
+.flipbox{
+    transition-duration: 1s;
+}
+.flipbox-outer:hover .flipbox{
+    transform: rotatey(180deg);
+}
+.flipbox{
+    position: relative;
+    transform-style: preserve-3d;
+}
+.flipbox .front , .flipbox .back{
+    position: absolute;
+    backface-visibility: hidden;
+}
+.flipbox .back{
+    transform: rotateY(180deg);
+}    
+
+.bd-body{
+    background-image: url('https://picsum.photos/id/261/1600/900');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+.bd-content{
+    background-color: rgba(17, 17, 17, 0.1);
+    backdrop-filter: blur(2px) brightness(1.1);
+    border-radius: 20px;
+}
+
+.section6 .wrapper{
+    position: relative;
+    overflow: hidden;
+}
+
+.section6 .text-wrapper{
+    position: absolute;
+    top: 100%;
+    z-index: 10;
+    color: #fff;
+    transition-duration: 0.5s;
+}
+
+.section6 .wrapper:hover .text-wrapper{
+    top: 50%;
+}
+
+.section6 .wrapper:before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0);
+    transition-duration: 0.5s;
+    top: 100%;
+    
+}
+
+.section6 .wrapper:hover::before{
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+}
+
+.social-link {
+    width: 55px !important;
+    height: 55px !important;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-shrink: 0;
+    margin-left: auto;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.social-link i {
+    font-size: 28px !important;
+    line-height: 1 !important;
+    display: block;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .mobile-scroll {
+        flex-wrap: nowrap !important; 
+        overflow-x: auto !important; 
+        -ms-overflow-style: none;  
+        scrollbar-width: none; 
+    }
+
+    .mobile-scroll::-webkit-scrollbar {
+        display: none;
+    }
+
+    .mobile-scroll .col-10 {
+        flex: 0 0 85% !important; 
+        width: 85% !important;
+        max-width: 85% !important;
+    }
+}
+
+@font-face {
+    font-family: 'MainTitleFont'; 
+    src: url('f3.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'SubHeadingFont';
+    src: url('f1.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'BodyTextFont';
+    src: url('f2.ttf') format('truetype');
+    font-weight: normal;
+}

@@ -1,0 +1,113 @@
+body {
+    background-color: #e3f2fd;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+:root{
+    --primary : #6AB0E3;
+    --dark :  #6AB0E3;
+}
+
+.navbar{
+    background-color: var(--primary);
+    font-family: 'MainTitleFont';
+    font-size: 24px;
+}
+
+.py-custom { padding-top: 100px; padding-bottom: 80px; }
+.bg-text {
+    font-family: 'BodyTextFont'!important;
+    font-size: 8rem;
+    color: #90caf9;
+    opacity: 0.25;
+    margin: 0;
+    line-height: 1;
+}
+
+.main-title{
+    font-family: 'MainTitleFont';
+    font-size: 40px;
+}
+
+.benefit{
+    font-family: 'BodyTextFont';
+    font-size: 20px;
+}
+
+.workout-card-link { text-decoration: none; color: #000; }
+.workout-card-link h3 { 
+    font-family: 'SubHeadingFont'; 
+    font-size: 18px;
+    margin-top: 15px; 
+}
+
+.workout-card-link img, .col img {
+    width: 100% !important;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.hover-zoom {
+    transition: transform 0.3s ease;
+}
+.hover-zoom:hover {
+    transform: scale(1.03);
+}
+
+.footer {
+    background-color: #90caf9;
+    width: 100%;
+    margin-top: auto;
+}
+.footer a { 
+    color: #fff !important; 
+    text-decoration: none; 
+    font-family: 'MainTitleFont'; 
+    font-size: 18px; 
+}
+.social-link {
+    width: 45px; height: 45px;
+    background: #000; color: #fff !important;
+    border-radius: 50% !important;
+    display: flex; align-items: center; justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .mobile-scroll {
+        flex-wrap: nowrap !important; 
+        overflow-x: auto !important; 
+        -ms-overflow-style: none;  
+        scrollbar-width: none; 
+    }
+
+    .mobile-scroll::-webkit-scrollbar {
+        display: none;
+    }
+
+    .mobile-scroll .col-10 {
+        flex: 0 0 85% !important; 
+        width: 85% !important;
+        max-width: 85% !important;
+    }
+}
+
+@font-face {
+    font-family: 'MainTitleFont'; 
+    src: url('f3.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'SubHeadingFont';
+    src: url('f1.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'BodyTextFont';
+    src: url('f2.ttf') format('truetype');
+    font-weight: normal;
+}
