@@ -114,17 +114,22 @@ body {
     font-weight: normal;
 
 }
-.class{
-	…
+@media (max-width: 768px) {
+    .mobile-scroll {
+        flex-wrap: nowrap !important; 
+        overflow-x: auto !important; 
+        -ms-overflow-style: none;  
+        scrollbar-width: none; 
+    }
+
+    .mobile-scroll::-webkit-scrollbar {
+        display: none;
+    }
+
+    .mobile-scroll .col-10 {
+        flex: 0 0 85% !important; 
+        width: 85% !important;
+        max-width: 85% !important;
+    }
 }
 
-@media screen and (max-width:991){
- 	 .class{
-		…
-	}
-}
-@media screen and (max-width : 767px){
- 	 .class{
-		…
-	}
-}
