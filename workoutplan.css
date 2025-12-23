@@ -141,4 +141,20 @@ body {
     font-family: 'BodyTextFont';
     src: url('f2.ttf') format('truetype');
     font-weight: normal;
+
+}
+
+.class{
+	…
+}
+
+@media screen and (max-width:991){
+ 	 .class{
+		…
+	}
+}
+@media screen and (max-width : 767px){
+ 	 .class{
+		…
+	}
 }
